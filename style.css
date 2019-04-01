@@ -1,0 +1,287 @@
+/*
+----------------------
+GLOBAL
+----------------------
+*/
+small{
+	color: #a9a9a9;
+}
+
+ul
+{
+	margin-left: 1.2em;
+	padding: 0;
+}
+
+.text-main-color{
+	color: #D80C18 !important;
+}
+
+.font-ming{
+	font-family: ‘Noto Sans TC’, sans-serif;
+}
+
+.font-song{
+	font-family: ‘cwTeXFangSong’, serif;
+}
+
+.blockquote{
+	font-family: times;
+}
+
+a:hover{
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+a, a:visited {
+	color: #D80C18;
+}
+
+.highlight-text{
+	font-size: 2em;
+}
+
+/*
+----------------------
+NAV
+----------------------
+*/
+
+nav ul{
+	width: 100%;
+}
+
+nav .social-link{
+	margin-right: 16px;
+}
+
+nav .social-link img{
+	width: 32px;
+	height: 32px;
+}
+
+#logo{
+	max-width: 240px;
+}
+
+.navbar{
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	border-bottom: 1px solid #eee;
+}
+
+#bg-nav{
+	height: 93px;
+	content: "";
+}
+
+/*
+----------------------
+BANNER
+----------------------
+*/
+
+#banner{
+	background-color: #ddd;
+	width: 100%;
+	background-image: url("img/banner_bg.jpg");
+	background-attachment: scroll;
+	background-attachment: fixed;
+  	background-position: center;
+  	background-color: #ddd;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	height: 600px;
+}
+
+#banner-text-top{
+	position: relative;
+	top: 20px;
+	right: 0px;
+	width: 85%;
+	height: auto;
+}
+
+#banner-text-bottom{
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	width: 85%;
+}
+
+#banner-text-bottom img{
+	width: 90%;
+	height: 90%;
+}
+
+/*
+----------------------
+CONCEPT
+----------------------
+*/
+
+#concept:after{
+	content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("img/logo_bg.png"); 
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity : 0.1;
+    z-index: -1;
+    /*background-attachment: fixed;*/
+	/*background-image:  url("img/logo_bg.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: */
+
+}
+
+
+/*
+----------------------
+ABOUT
+----------------------
+*/
+
+/*
+----------------------
+EVENT
+----------------------
+*/
+
+#event-detail{
+	background-color: #fafafa;
+	border: 1px solid #eee;
+	border-top: 4px solid #D80C18;
+}
+
+#event-title{
+	font-size: 2rem;
+}
+
+#signup a{
+	background-color: #D80C18;
+	width: 120px;
+	height: 44px;
+	color: #fff;
+}
+
+/*
+----------------------
+SPEAKER
+----------------------
+*/
+
+.section{
+	border-top: solid 1px #D80C18;
+  	margin-top: 100px;
+  	position: relative;
+}
+
+.section-header{
+	width: 20%;
+	min-width: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: -53px;
+	background-color: #fff;
+}
+
+.logo-90{
+	width: 90%;
+}
+
+/*
+----------------------
+FOOTER
+----------------------
+*/
+
+footer{
+	margin-top: 120px;
+	height: 50px;
+	background-color: #000;
+}
+
+/*
+----------------------
+RESPONSIVE
+----------------------
+*/
+
+@media screen and (min-width: 720px){
+	#signup-top{
+		margin-left: 16px;
+		background-color: #D80C18;
+		color: #ffffff !important;
+	}	
+}
+
+@media screen and (max-width: 992px){
+	#banner{
+		height: 480px;
+	}
+	#banner-text-bottom{
+		top: 5%;
+		background-attachment: scroll;
+	}
+	#banner-text-bottom img{
+		width: 70%;
+		height: 70%;
+	}
+}
+
+@media screen and (max-width: 576px){
+	#logo{
+		max-width: 180px;
+		height: auto;
+	}
+	#bg-nav{
+		height: 71px;
+	}
+	#banner{
+		height: 400px;
+		background-attachment: scroll;
+	}
+	#banner-text img{
+		position: relative;
+	}
+	#banner-text-top{
+		top: 15%;
+		width: 85%;
+		max-width: 350px;
+	}
+	#banner-text-bottom{
+		top: 25%;
+		width: 85%;
+		max-width: 350px;
+	}
+	#banner-text-bottom img{
+		width: 80%;
+		height: 80%;
+	}	
+}
+
+@media screen and (max-width: 375px){
+	#banner{
+		height: 320px;
+		background-attachment: scroll;
+	}
+	#banner-text-top{
+		top: 10%;
+		width: 100%;
+		/*max-width: 350px;*/
+	}
+	#banner-text-bottom{
+		top: 15%;
+		width: 100%;
+		/*max-width: 350px;*/
+	}
+}
